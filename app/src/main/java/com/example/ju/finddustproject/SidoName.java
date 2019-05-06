@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 public class SidoName extends AppCompatActivity {
 
     private RecyclerView recyclerViewSidoName;
+    private AdapterSidoName adapterSidoName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

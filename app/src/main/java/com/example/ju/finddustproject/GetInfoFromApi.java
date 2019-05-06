@@ -31,6 +31,7 @@ public class GetInfoFromApi {
         Retrofit retrofit;
         String api_key = parentContext.getString(R.string.api_key);
         String baseUrlGetCityInfo = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/";
+
         retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrlGetCityInfo)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -83,7 +84,6 @@ public class GetInfoFromApi {
             this.areaInfoList = areaInfoList;
         }
     }
-
     class AreaInfoRetrofit implements Serializable {
 
         @SerializedName("cityName")
