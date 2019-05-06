@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        kangraeminInit();
+    }
+    void kangraeminInit(){
         SearchButton = findViewById(R.id.SearchFineDustBySidoName);
         SearchButton.setOnClickListener(new View.OnClickListener() {
             @Override

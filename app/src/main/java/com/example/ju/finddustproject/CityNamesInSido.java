@@ -18,6 +18,7 @@ public class CityNamesInSido extends AppCompatActivity {
     Context contextThis;
     List<GetInfoFromApi.AreaInfoRetrofit> cityList;
     String sidoName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
